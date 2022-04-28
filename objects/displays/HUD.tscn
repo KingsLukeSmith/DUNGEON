@@ -1,0 +1,83 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://objects/displays/CharacterSimple.tscn" type="PackedScene" id=1]
+[ext_resource path="res://objects/characters/Char4.tres" type="Resource" id=2]
+[ext_resource path="res://objects/characters/Char2.tres" type="Resource" id=3]
+[ext_resource path="res://objects/characters/Char1.tres" type="Resource" id=4]
+[ext_resource path="res://objects/characters/Char3.tres" type="Resource" id=5]
+[ext_resource path="res://objects/displays/MainMenu.tscn" type="PackedScene" id=6]
+[ext_resource path="res://objects/displays/DefaultTheme.tres" type="Theme" id=7]
+
+[sub_resource type="Theme" id=1]
+
+[node name="MarginContainer" type="MarginContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 20.0
+margin_top = 20.0
+margin_right = -20.0
+margin_bottom = -20.0
+rect_min_size = Vector2( 0, 100 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource( 7 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 4.0
+margin_top = 526.0
+margin_right = 1236.0
+margin_bottom = 676.0
+size_flags_vertical = 8
+theme = SubResource( 1 )
+custom_constants/separation = 30
+
+[node name="Character" parent="HBoxContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 285.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 0, 150 )
+size_flags_horizontal = 3
+character = ExtResource( 4 )
+
+[node name="Character2" parent="HBoxContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 315.0
+margin_right = 601.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 0, 150 )
+size_flags_horizontal = 3
+character = ExtResource( 3 )
+
+[node name="Character3" parent="HBoxContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 631.0
+margin_right = 916.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 0, 150 )
+size_flags_horizontal = 3
+character = ExtResource( 5 )
+
+[node name="Character4" parent="HBoxContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 946.0
+margin_right = 1232.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 0, 150 )
+size_flags_horizontal = 3
+character = ExtResource( 2 )
+
+[node name="Selectors" type="HBoxContainer" parent="."]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 1236.0
+margin_bottom = 676.0
+custom_constants/separation = 12
+
+[node name="MainMenu" parent="Selectors" instance=ExtResource( 6 )]
+margin_left = 0.0
+margin_top = 0.0
+margin_bottom = 176.0

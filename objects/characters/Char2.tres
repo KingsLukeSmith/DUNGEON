@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/Character.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+char_name = "Zed"
+level = 3
+base_hp = 24
+base_mp = 4
+base_atk = 12
+base_def = 18
+xp = 0

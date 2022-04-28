@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/Character.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+char_name = "Joe"
+level = 1
+base_hp = 16
+base_mp = 0
+base_atk = 8
+base_def = 10
+xp = 0
