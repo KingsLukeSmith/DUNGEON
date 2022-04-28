@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://objects/displays/DefaultTheme.tres" type="Theme" id=2]
+[ext_resource path="res://objects/displays/scripts/ItemsListMenu.gd" type="Script" id=3]
+
+[node name="PanelContainer" type="PanelContainer"]
+margin_right = 14.0
+margin_bottom = 14.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+script = ExtResource( 3 )
+
+[node name="OptionContainer" type="MarginContainer" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 7.0
+margin_bottom = 7.0
+
+[node name="Buttons" type="GridContainer" parent="OptionContainer"]
+theme = ExtResource( 2 )
+columns = 4

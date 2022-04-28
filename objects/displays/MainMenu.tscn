@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://objects/displays/Menu.gd" type="Script" id=1]
+[ext_resource path="res://objects/displays/scripts/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://objects/displays/DefaultTheme.tres" type="Theme" id=2]
 
 [node name="MainMenu" type="PanelContainer"]
@@ -78,14 +78,5 @@ theme = ExtResource( 2 )
 text = "SAVE"
 flat = true
 align = 0
-
-[node name="MainMenu" type="Control" parent="."]
-margin_left = 6.0
-margin_top = 6.0
-margin_right = 6.0
-margin_bottom = 6.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-theme = ExtResource( 2 )
 
 [connection signal="pressed" from="OptionContainer/Buttons/BtnItems" to="." method="_on_BtnItems_pressed"]

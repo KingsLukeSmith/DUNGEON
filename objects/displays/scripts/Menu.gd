@@ -40,6 +40,4 @@ func _on_BtnItems_pressed():
 func _process(delta):
 	if Input.is_action_just_pressed("ui_cancel") and focused:
 		queue_free()
-		emit_signal("close_menu")
-		if get_parent() != null:
-			get_parent().get_child(0)._allow_focus()
+
